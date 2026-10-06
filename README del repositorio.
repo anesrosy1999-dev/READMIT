@@ -1,0 +1,24 @@
+# RetailPro — Data Analytics Project (`Ventas_Tech_DB`)
+
+## Descripción del Proyecto
+Desarrollo analítico integral para la empresa **RetailPro**, que abarca desde la creación de la base de datos relacional `Ventas_Tech_DB` en SQL (agregaciones en M4 y combinación de tablas en M5), hasta el pipeline ETL, modelado en estrella (*Star Schema*) y tablero interactivo con medidas DAX en Power BI.
+
+## Estructura del Repositorio
+- `scripts_sql/`:
+  - `m4_consultas_negocio.sql`: Agregaciones, agrupamientos, HAVING y CTEs.
+  - `m5_consultas_joins.sql`: Consultas con INNER y LEFT JOINs, y UNION ALL por canal.
+- `power_bi/`: Archivo `Pipeline_ETL_Añez_Rosy.pbix` con el modelo en estrella y medidas DAX.
+- `docs/`: Entregables y documentación del proyecto.
+
+## Herramientas Utilizadas
+- **SQL / MySQL Server:** Consultas relacionales, agrupaciones y joins.
+- **Power Query:** Limpieza de datos, ajuste de tipo de datos para `fecha_venta`.
+- **Power BI Desktop:** Modelado de datos en estrella (`FACT_VENTAS` y dimensiones) y DAX (`TOTALYTD`, `SAMEPERIODLASTYEAR`, `DIVIDE`).
+- **IA (Google Gemini):** Copiloto para documentación, revisión SQL e insights.
+
+## Instrucciones de Ejecución
+1. Clonar el repositorio: `git clone https://github.com/usuario/retailpro-analytics.git`
+2. Ejecutar los scripts en la base `Ventas_Tech_DB` en orden:
+   - `m4_consultas_negocio.sql`
+   - `m5_consultas_joins.sql`
+3. Abrir `Pipeline_ETL_Añez_Rosy.pbix` en Power BI Desktop para explorar las medidas e informes.
